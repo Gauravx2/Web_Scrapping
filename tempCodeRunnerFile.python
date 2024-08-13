@@ -1,0 +1,4 @@
+import pandas as pd 
+data=pd.read_json('course.json')
+data.to_excel('course.xlsx',index=False,engine='openpyxl')
+print("JSON data has been successfully converted to Excel")
